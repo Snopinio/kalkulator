@@ -40,7 +40,7 @@
             button5 = new Button();
             button6 = new Button();
             button8 = new Button();
-            button1 = new Button();
+            OneBtn = new Button();
             button2 = new Button();
             button3 = new Button();
             button7 = new Button();
@@ -67,7 +67,7 @@
             tableLayoutPanel1.Controls.Add(button5, 1, 2);
             tableLayoutPanel1.Controls.Add(button6, 2, 2);
             tableLayoutPanel1.Controls.Add(button8, 3, 2);
-            tableLayoutPanel1.Controls.Add(button1, 0, 1);
+            tableLayoutPanel1.Controls.Add(OneBtn, 0, 1);
             tableLayoutPanel1.Controls.Add(button2, 1, 1);
             tableLayoutPanel1.Controls.Add(button3, 2, 1);
             tableLayoutPanel1.Controls.Add(button7, 3, 1);
@@ -94,6 +94,7 @@
             button16.TabIndex = 15;
             button16.Text = "=";
             button16.UseVisualStyleBackColor = true;
+            button16.Click += button16_Click;
             // 
             // button14
             // 
@@ -103,6 +104,7 @@
             button14.TabIndex = 13;
             button14.Text = "0";
             button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
             // 
             // button13
             // 
@@ -112,6 +114,7 @@
             button13.TabIndex = 12;
             button13.Text = "-";
             button13.UseVisualStyleBackColor = true;
+            button13.Click += button13_Click;
             // 
             // button12
             // 
@@ -121,6 +124,7 @@
             button12.TabIndex = 11;
             button12.Text = "+";
             button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
             // 
             // button9
             // 
@@ -130,6 +134,7 @@
             button9.TabIndex = 8;
             button9.Text = "8";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button10
             // 
@@ -139,6 +144,7 @@
             button10.TabIndex = 9;
             button10.Text = "9";
             button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // button11
             // 
@@ -148,6 +154,7 @@
             button11.TabIndex = 10;
             button11.Text = "x";
             button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
             // 
             // button4
             // 
@@ -157,6 +164,7 @@
             button4.TabIndex = 3;
             button4.Text = "4";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -166,6 +174,7 @@
             button5.TabIndex = 4;
             button5.Text = "5";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -175,6 +184,7 @@
             button6.TabIndex = 5;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button8
             // 
@@ -184,15 +194,17 @@
             button8.TabIndex = 7;
             button8.Text = "/";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
-            // button1
+            // OneBtn
             // 
-            button1.Location = new Point(3, 93);
-            button1.Name = "button1";
-            button1.Size = new Size(194, 84);
-            button1.TabIndex = 0;
-            button1.Text = "1";
-            button1.UseVisualStyleBackColor = true;
+            OneBtn.Location = new Point(3, 93);
+            OneBtn.Name = "OneBtn";
+            OneBtn.Size = new Size(194, 84);
+            OneBtn.TabIndex = 0;
+            OneBtn.Text = "1";
+            OneBtn.UseVisualStyleBackColor = true;
+            OneBtn.Click += OneBtn_Click;
             // 
             // button2
             // 
@@ -202,6 +214,7 @@
             button2.TabIndex = 1;
             button2.Text = "2";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -211,6 +224,7 @@
             button3.TabIndex = 2;
             button3.Text = "3";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button7
             // 
@@ -230,6 +244,7 @@
             button15.TabIndex = 14;
             button15.Text = "7";
             button15.UseVisualStyleBackColor = true;
+            button15.Click += button15_Click;
             // 
             // textBox1
             // 
@@ -257,7 +272,7 @@
         #endregion
 
         private TableLayoutPanel tableLayoutPanel1;
-        private Button button1;
+        private Button OneBtn;
         private Button button2;
         private Button button3;
         private Button button4;
